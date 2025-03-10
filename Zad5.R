@@ -1,4 +1,4 @@
-
+res = NULL
 losuj = function(n){
   res = sample(100,n)
   res = sort(res)
@@ -6,9 +6,8 @@ losuj = function(n){
     res = sample(100,n)
     res = sort(res)
   }
-  res
+  return res
 }
 
-losuj(10)
-
+odpowiedz = losuj(5)
 
